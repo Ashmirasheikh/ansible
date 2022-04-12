@@ -6,14 +6,16 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Ashmirasheikh/studentapp-ui.git'
             }
         }
-    stage('build') {
-         steps {
-             sh 'mvn package clean'
+        stage('build') {
+            steps {
+                sh 'mvn package clean'
             }
         }
-    stage('test') {
-        steps { withSonarQubeEnv ('sonar') {
-            sh 'mvn sonar:sonar'
+        stage('test') {
+            steps {
+                withSonarQubeEnv(credentialsId: '21') {
+                 sh 'mvn sonar:sonar'
+}
                 }
             }
         }
