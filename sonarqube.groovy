@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                git 'https://github.com/Ashmirasheikh/webhook.git'
+                git 'https://github.com/Ashmirasheikh/studentapp-ui.git'
             }
         }
          stage('build') {
