@@ -1,0 +1,8 @@
+---
+- name: playbook for debug
+  hosts: all
+  vars: 
+    URL: "www.google.com"
+  tasks: 
+    msg: "pls visit {{URL}}" 
+... 
