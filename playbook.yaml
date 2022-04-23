@@ -3,6 +3,6 @@ name: its-me saif
   JBL: "www.google.com" 
     print: "{{JBL}}"
     URL: "www.facebook.com" 
-      print: "{{URL}}"
+      print: "{{JBL}}"
   print: "{{JBL}}"
   ...
