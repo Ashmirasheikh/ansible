@@ -1,8 +1,8 @@
----
 - name: playbook for debug
   hosts: all
-  vars: 
-    URL: "www.google.com"
-  tasks: 
-    msg: "pls visit {{URL}}" 
-... 
+  vars:
+    URL: "www.facebook.com"
+  tasks:
+    - name: "print my name is saif"
+      debug: 
+        msg: "pls visit {{URL}}"
