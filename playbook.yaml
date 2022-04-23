@@ -6,5 +6,5 @@
     - name: "print my name is saif"
       debug: 
         msg: "pls visit {{URL}}"
-    vars: 
-      URL: "www.google.com"
+  vars: 
+    URL: "www.google.com"
