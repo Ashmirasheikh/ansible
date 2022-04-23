@@ -8,5 +8,4 @@
         debug: 
           msg: "pls visit {{URL}}"
         vars: 
-          URL: "www.google.com"
   ...
