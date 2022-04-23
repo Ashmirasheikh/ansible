@@ -3,3 +3,4 @@ name: its-me saif
     print: "{{URL}}"
     URL: "www.facebook.com" 
       print: "{{URL}}"
+    print: "{{URL}}"
