@@ -1,14 +1,14 @@
 ---
-- name: playbook for debug
-  hosts: all
-  vars_files:
-    ./playbook.yaml
-  vars:
-  URL: "www.facebook.com"  #nagpur is global
-  tasks:
-    - name: "print my name is saif"
-      debug: 
-        msg: "pls visit {{URL}}"
-      vars: 
-        URL: "www.google.com" #nagpur is global
+  - name: playbook for debug
+    hosts: all
+    vars_files:
+      ./playbook.yaml
+    vars:
+    URL: "www.facebook.com"  #nagpur is global
+    tasks:
+      - name: "print my name is saif"
+        debug: 
+          msg: "pls visit {{URL}}"
+        vars: 
+          URL: "www.google.com" #nagpur is global
 ...
