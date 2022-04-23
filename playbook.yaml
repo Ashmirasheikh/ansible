@@ -1,13 +1,12 @@
 ---
-- name: playbookfordebug
+- name: project 
   hosts: all
   vars_files:
-    ./playbook.yaml
   vars:
   URL: "www.facebook.com"  #nagpur is global
   tasks:
       debug: 
         msg: "pls visit {{URL}}"
       vars: 
-      URL: "www.google.com" #nagpur is global
+        URL: "www.google.com" #nagpur is global
 ...
