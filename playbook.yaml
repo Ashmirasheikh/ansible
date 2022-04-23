@@ -6,5 +6,4 @@
     URL: "www.facebook.com"  #nagpur is global
     tasks:
         debug: 
-          msg: "pls visit {{URL}}"
   ...
