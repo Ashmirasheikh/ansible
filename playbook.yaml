@@ -1,12 +1,12 @@
 ---
-- name: project 
-  hosts: all
-  vars_files:
-  vars:
-  URL: "www.facebook.com"  #nagpur is global
-  tasks:
-      debug: 
-        msg: "pls visit {{URL}}"
-      vars: 
-        URL: "www.google.com" #nagpur is global
-...
+  - name: 
+    hosts: all
+    vars_files:
+    vars:
+    URL: "www.facebook.com"  #nagpur is global
+    tasks:
+        debug: 
+          msg: "pls visit {{URL}}"
+        vars: 
+          URL: "www.google.com" #nagpur is global
+  ...
