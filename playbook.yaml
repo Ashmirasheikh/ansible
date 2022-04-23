@@ -9,6 +9,6 @@
         vars: 
         URL: "www.google.com" #nagpur is global
       tasks: 
-      - name: "print last name is sheikh"
-        debug: 
-        msg: "pls visit {{URL}}"
+        - name: "print last name is sheikh"
+          debug: 
+            msg: "pls visit {{URL}}"
