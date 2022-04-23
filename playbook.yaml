@@ -6,7 +6,6 @@
     vars:
     URL: "www.facebook.com"  #nagpur is global
     tasks:
-      - name: "print my name is saif"
         debug: 
           msg: "pls visit {{URL}}"
         vars: 
