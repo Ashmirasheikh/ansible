@@ -1,0 +1,14 @@
+- name: playbook for debug
+  hosts: all
+  vars:
+    URL: "www.facebook.com"  #nagpur is global
+  tasks:
+    - name: "print my name is saif"
+      debug: 
+        msg: "pls visit {{URL}}"
+        vars: 
+        URL: "www.google.com" #nagpur is global
+      tasks: 
+      - name: "print last name is sheikh"
+        debug: 
+        msg: "pls visit {{URL}}"
