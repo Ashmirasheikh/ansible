@@ -2,7 +2,7 @@
 name: its-me saif
   JBL: "www.google.com" 
     print: "{{JBL}}"
-    URL: "www.facebook.com" 
+    # URL: "www.facebook.com" 
       print: "{{JBL}}"
   print: "{{JBL}}"
   ...
