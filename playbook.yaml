@@ -1,9 +1,5 @@
 ---
-  - name: 
-    hosts: all
-    vars_files:
-    vars:
-    URL: "www.facebook.com"  #nagpur is global
-    tasks:
-        debug: 
+  name: its-me saif
+  URL: "www.google.com" 
+  print: {{URL}}
   ...
