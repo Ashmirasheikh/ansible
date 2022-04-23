@@ -8,5 +8,5 @@
         debug: 
           msg: "pls visit {{URL}}"
         vars: 
-          URL: "www.google.com" #nagpur is global
+          URL: "www.google.com"
   ...
