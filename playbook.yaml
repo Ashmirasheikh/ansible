@@ -1,5 +1,5 @@
 ---
-  - name: playbook for debug
+  - name: playbookfordebug
     hosts: all
     vars_files:
       ./playbook.yaml
