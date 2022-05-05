@@ -1,4 +1,19 @@
-- name: Install the latest version of Apache
-  yum:
-    name: httpd
-    state: latest
+- name: playbook to create webserver
+  hosts: all
+  become: true
+  tasks: 
+    - name: install package
+      yum: 
+        state: latest
+        name: httpd
+
+    - name: start httpd daemon
+      service:
+        state: started
+        name: httpd
+        enabled: true
+
+    - name: deploy website
+      copy:
+        src: ./index.html
+        dest: /var/www/html/index.html
